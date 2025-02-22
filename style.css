@@ -202,7 +202,7 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
     transform: rotate(45deg); /* Mantém o formato de diamante */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
     animation: shadow_animation 10s ease-out infinite ;
-     background: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88);
+     background: linear-gradient(to bottom, #ff00ff, #0072ff, white);
 }
 
 @keyframes shadow_animation {
