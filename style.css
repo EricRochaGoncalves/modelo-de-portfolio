@@ -126,7 +126,7 @@ header h1 {
 .sub-section-home {
  display: flex;
  width: 100%;
- height: 80%;
+ height: 70%;
  
  justify-content: center;
  align-items: center;
@@ -134,7 +134,7 @@ header h1 {
 .sub-title {
  display: flex;
  width: 100%;
- height: 20%;
+ height: 30%;
  border-top: 10px solid transparent;
 border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
  
@@ -166,6 +166,7 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease;
+ 
 }
 
 .navigate:hover {
@@ -188,12 +189,17 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
  .sub-title h1 {
   font-size: 20px;
  }
+ .diamond-container {
+  width: 200px;
+  height: 200px;
+ }
+  
 }
     
     .diamond-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     display: flex;
     align-items: center;
