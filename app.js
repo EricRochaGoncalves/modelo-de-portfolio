@@ -32,4 +32,27 @@ document.addEventListener('touchmove', (e) => {
   updateRotation(x, y);
 }, { passive: true }); // Adicionando { passive: true } para melhorar o desempenho no mobile
 
+// Função para fechar o modal manualmente
+        function fecharModal() {
+            document.getElementById("modal-inicial").style.display = "none";
+        }
 
+        // Função que lida com o localStorage para exibir ou não o modal
+        document.addEventListener("DOMContentLoaded", function () {
+            // Verifica se o item "naoMostrarModal" está salvo no localStorage
+            if (!localStorage.getItem("naoMostrarModal")) {
+                // Exibe o modal se a chave não estiver no localStorage
+                document.getElementById("modal-inicial").style.display = "flex";
+            }
+
+            // Adiciona o evento ao checkbox
+            document.getElementById("naoLembrar").addEventListener("change", function () {
+                // Verifica se a checkbox foi marcada
+                if (this.checked) {
+                    // Marca no localStorage para não mostrar o modal novamente
+                    localStorage.setItem("naoMostrarModal", "true");
+                    // Fecha o modal
+                    document.getElementById("modal-inicial").style.display = "none";
+                }
+            });
+        });
