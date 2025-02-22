@@ -198,8 +198,8 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
     
     .diamond-container {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     display: flex;
     align-items: center;
