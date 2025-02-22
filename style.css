@@ -136,7 +136,6 @@ header h1 {
  width: 100%;
  height: 30%;
  border-top: 10px solid transparent;
-border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
  
  justify-content: center;
  align-items: center;
@@ -160,12 +159,14 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
   font-size: 15px;
   padding: 15px 20px;
   background-color: black;
-  border: 2px solid #00ff88;
+  
   border-radius: 5px;
   color: white; /* Cor do texto inicial */
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease;
+ 
+ border: none;
  
 }
 
@@ -174,7 +175,7 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
   border: 4px solid #ff0099;
   background-color: #ff0099;
   transition: 0.5s;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
@@ -206,41 +207,29 @@ border-image: linear-gradient(to bottom, #ff00ff, #0072ff, #00ff88) 1;
     justify-content: center;
     
     transform: rotate(45deg); /* Mantém o formato de diamante */
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+     
     animation: shadow_animation 10s ease-out infinite ;
-     background: linear-gradient(to bottom, #ff00ff, #0072ff, white);
+     background: linear-gradient(to bottom, #ff66cc, #99ccff, white);
 }
 
 @keyframes shadow_animation {
     0% {
         transform: translateY(-55px) rotate(45deg);
-        box-shadow: 20px 10px 10px rgba(255, 0, 255, 0.3),  
-                    -20px -10px 10px rgba(0, 114, 255, 0.3),  
-                    20px -10px 10px rgba(0, 255, 136, 0.3),  
-                    -20px 10px 10px rgba(255, 0, 255, 0.3);
+        
     }
  
     50% {
         transform: translateY(5px) rotate(45deg);
-        box-shadow: 10px 10px 10px rgba(255, 0, 255, 0.2),  
-                    -10px -10px 10px rgba(0, 114, 255, 0.2),  
-                    10px -10px 10px rgba(0, 255, 136, 0.2),  
-                    -10px 10px 10px rgba(255, 0, 255, 0.2);
+        
     }
 
     90% {
-        box-shadow: 20px 10px 10px rgba(255, 0, 255, 0.4),  
-                    -20px -10px 10px rgba(0, 114, 255, 0.4),  
-                    20px -10px 10px rgba(0, 255, 136, 0.4),  
-                    -20px 10px 10px rgba(255, 0, 255, 0.4);
+        
     }
 
     100% {
         transform: translateY(-45px) rotate(45deg);
-        box-shadow: 20px 10px 10px rgba(255, 0, 255, 0.3),  
-                    -20px -10px 10px rgba(0, 114, 255, 0.3),  
-                    20px -10px 10px rgba(0, 255, 136, 0.3),  
-                    -20px 10px 10px rgba(255, 0, 255, 0.3);
+        
     }
 }
 
