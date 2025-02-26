@@ -149,34 +149,55 @@ header h1 {
  letter-spacing: 1px;
  font-size: 25px;
  padding: 15px;
- line-height: 30px;
  font-weight: bold;
  color: white;
  
  
 }
+.sub-title p {
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ font-weight: bold;
+ letter-spacing: 1px;
+ line-height: 25px;
+ 
+ 
+}
 .navigate {
   font-size: 15px;
-  padding: 15px 20px;
+  
   background-color: black;
   
-  border-radius: 5px;
+  border-radius: 20px;
   color: white; /* Cor do texto inicial */
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease;
- 
- border: none;
+ width: 50%;
+ height: 50px;
+ border: 2px solid #ff0099;
+ justify-content: center;
+ align-items: center;
+}
+.navigate a {
+ text-decoration: none;
+ color: #ff0099;
+ font-weight: bold;
+ font-size: 20px;
+ padding: 0px 5px;
  
 }
 
 .navigate:hover {
-  background-color: black;
+  
   border: 4px solid #ff0099;
-  background-color: #ff0099;
+  
   transition: 0.5s;
+  
   transform: scale(1.1);
 }
+
 
 
 @media screen and (max-width: 728px) {
@@ -205,6 +226,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+
     
     transform: rotate(45deg); /* Mantém o formato de diamante */
      
